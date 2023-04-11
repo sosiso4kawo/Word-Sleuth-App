@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gameproject.GamePage">
+    <StackLayout>
+        <Label Text="Введите буквы:" />
+        <Entry x:Name="LettersEntry" />
+        <Button Text="Проверить" />
+    </StackLayout>
+</ContentPage>

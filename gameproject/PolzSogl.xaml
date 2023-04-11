@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gameproject.PolzSogl"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Разработчики: Кетова Ася и Гапоненко Саша 107Б1"/>
+            <Label Text="ВКИ НГУ 2023" Margin="140, 500, 0, 10"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

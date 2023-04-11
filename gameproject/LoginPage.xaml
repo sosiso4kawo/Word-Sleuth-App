@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gameproject.LoginPage"
+             BackgroundColor="WhiteSmoke"
+             NavigationPage.HasNavigationBar="False">
+             
+    <ContentPage.Content>
+        <StackLayout Padding="40" Margin="0, 100, 0, 0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" >
+            <Image Source="logo_transparent.png" />
+
+            <Grid VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Entry Placeholder="Имя пользователя" FontSize="16" x:Name="EntryUserName" Grid.Row="0"/>
+                <Entry Placeholder="Пароль" IsPassword="True" FontSize="16" x:Name="EntryPassword" Grid.Row="1"/>
+                <Button Text="Вход" Grid.Row="2" BackgroundColor="Transparent" BorderColor='Gray' BorderWidth="1.5" CornerRadius="50" TextColor="Black" Clicked="Button_Clicked"/>
+                
+            </Grid>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Еще нет аккаунта? " TextColor="Black" />
+                        <Span Text="Регистрация" TextColor="Black" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Пользовательское соглашение" TextColor="Black" FontSize="11" TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Label.GestureRecognizers>
+            </Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
